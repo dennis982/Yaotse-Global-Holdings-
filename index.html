@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yaotse Global Holdings | Global Empire</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter;
+scroll-behavior:smooth;
+}
+
+body{
+background:#05060a;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* NAV */
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(12px);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+font-size:1.2rem;
+font-weight:800;
+letter-spacing:2px;
+color:#d4af37;
+text-transform:uppercase;
+}
+
+nav a{
+margin:0 12px;
+color:#ccc;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+background:url('https://images.unsplash.com/photo-1505842465776-3b4953ca4f5c') center/cover;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+position:relative;
+z-index:1;
+animation:fadeIn 2s ease;
+}
+
+.hero h1{
+font-size:4rem;
+color:#d4af37;
+letter-spacing:2px;
+}
+
+.hero p{
+margin-top:10px;
+opacity:0.8;
+font-size:1.2rem;
+}
+
+.btn{
+margin-top:25px;
+padding:14px 30px;
+background:#d4af37;
+color:#000;
+border:none;
+font-weight:700;
+cursor:pointer;
+border-radius:4px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+padding:100px 8%;
+}
+
+.title{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:50px;
+color:#d4af37;
+letter-spacing:1px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+/* CARDS */
+.card{
+background:rgba(255,255,255,0.04);
+padding:25px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.08);
+transition:0.4s;
+backdrop-filter:blur(10px);
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#d4af37;
+}
+
+/* IMAGES */
+img{
+width:100%;
+border-radius:10px;
+margin-top:15px;
+transition:0.4s;
+}
+
+img:hover{
+transform:scale(1.05);
+}
+
+/* STATS */
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:rgba(255,255,255,0.04);
+padding:30px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.stat h1{
+font-size:2.5rem;
+color:#d4af37;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:50px;
+border-top:1px solid rgba(255,255,255,0.08);
+color:#777;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Yaotse Global Holdings</div>
+<nav>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#assets">Assets</a>
+<a href="#vision">Vision</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<h1>Global Empire in Building</h1>
+<p>Real Estate • Technology • Investment • Infrastructure</p>
+<button class="btn">Explore Holdings</button>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="title">Corporate Overview</h2>
+
+<div class="grid">
+<div class="card">
+<p>Yaotse Global Holdings is a future international investment and development group focused on building long-term wealth through real estate, infrastructure, technology, and strategic global investments.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c">
+</div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<h2 class="title">Global Portfolio</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Luxury Real Estate</h3>
+<p>High-end residential developments and smart estates.</p>
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+</div>
+
+<div class="card">
+<h3>Commercial Towers</h3>
+<p>Modern business districts and corporate headquarters.</p>
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+</div>
+
+<div class="card">
+<h3>Infrastructure Projects</h3>
+<p>Future-ready transport, energy, and smart city systems.</p>
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+</div>
+</div>
+</section>
+
+<!-- ASSETS -->
+<section id="assets">
+<h2 class="title">Asset Strength</h2>
+
+<div class="stats">
+<div class="stat">
+<h1>$0+</h1>
+<p>Current Valuation (Future Target)</p>
+</div>
+
+<div class="stat">
+<h1>5+</h1>
+<p>Strategic Sectors</p>
+</div>
+
+<div class="stat">
+<h1>100%</h1>
+<p>Long-Term Vision Focus</p>
+</div>
+
+<div class="stat">
+<h1>∞</h1>
+<p>Growth Potential</p>
+</div>
+</div>
+</section>
+
+<!-- VISION -->
+<section id="vision">
+<h2 class="title">Future Vision</h2>
+
+<div class="grid">
+<div class="card">
+<p>To evolve into a global powerhouse in real estate, infrastructure, technology, energy, and investment management, creating generational wealth and global impact.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496307653780-42ee777d4833">
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="title">Investment Contact</h2>
+
+<div class="grid">
+<div class="card">
+<p>Email: dennisyaotse@gmail.com</p>
+<p>Phone: 0257526538</p>
+</div>
+
+<div class="card">
+<p>For partnerships, investments, and strategic collaborations with Yaotse Global Holdings.</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Yaotse Global Holdings — All Rights Reserved
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
